@@ -7,7 +7,15 @@
   text-decoration: none;
   scroll-behavior: smooth;
 }
-
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f0f8ff;
+}
 /* Custom Scroll Bar CSS */
 ::-webkit-scrollbar {
   width: 10px;
@@ -109,7 +117,7 @@ nav.sticky .menu-btn {
 
 /* home section styling */
 .home {
-  height: 90vh;
+  height: 92vh;
   width: 100%;
   background: #f0f8ff;
   background-size: cover;
@@ -120,7 +128,7 @@ nav.sticky .menu-btn {
 .home .home-content {
   width: 90%;
   height: 100%;
-  margin: auto;
+  margin-left: 20%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -234,6 +242,7 @@ section .title span::after {
 }
 .about {
   background: #f0f8ff;
+  height: 92vh;
 }
 
 .about .about-details .left {
@@ -283,6 +292,7 @@ section .button button:hover {
 /* My Skills CSS */
 .skills {
   background: #f0f8ff;
+  height: 92vh;
 }
 .skills .content {
   padding: 40px 0;
@@ -342,7 +352,7 @@ section .button button:hover {
 }
 .services .boxes .box {
   margin: 20px 0;
-  width: 570px;
+  width: 48%;
   height: 400px;
   text-align: center;
   border-radius: 12px;
@@ -455,8 +465,8 @@ footer .text span a:hover {
     height: 400px;
     float: right;
     position: absolute;
-    top: 150px;
-    left: 700px;
+    top: 180px;
+    left: 55%;
   }
 /* Responsive Media Query */
 @media (max-width: 1190px) {
@@ -567,5 +577,10 @@ footer .text span a:hover {
   .skills-details .boxes .per {
     font-size: 50px;
     color: #4070f4;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .services .boxes .box {
+    height: 500px;
   }
 }
