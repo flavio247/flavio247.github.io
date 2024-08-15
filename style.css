@@ -356,7 +356,7 @@ section .button button:hover {
   height: 400px;
   text-align: center;
   border-radius: 12px;
-  padding: 30px 10px;
+  padding: 40px 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
   cursor: default;
   transition: all 0.4s ease;
@@ -370,14 +370,25 @@ section .button button:hover {
   background-repeat: no-repeat;
   cursor: pointer;
 }
+.services .boxes a{
+  width: 48%;
+}
+.services .boxes a .box{
+  width: 100%;
+}
 .services .boxes .pharma:hover {
-  background-image: url("./projects/iqmed project.png");
+  background-image: url("./projects/medical project.png");
 }
 .services .boxes .tax:hover {
   background-image: url("./projects/1.png");
 }
 .services .boxes .tax2:hover {
   background-image: url("./projects/2.png");
+}
+.services .boxes .portfolio-react:hover {
+  background-image: url("./projects/portfolio-react.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .services .boxes .box .icon {
